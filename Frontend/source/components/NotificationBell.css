@@ -1,0 +1,74 @@
+.notification-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .bell-icon {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .notification-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .notification-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .notification-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .notification-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .notification-btn.yellow {
+    background-color: #ffc107;
+  }
+  
+  .notification-btn.red {
+    background-color: #dc3545;
+  }
+  
+  .notification-btn.green {
+    background-color: #28a745;
+  }
+  
+  .notification-content {
+    padding: 15px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .notification-content p {
+    margin: 0;
+    font-size: 14px;
+  }
